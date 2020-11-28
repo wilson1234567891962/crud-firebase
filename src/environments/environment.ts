@@ -5,14 +5,14 @@
 export const environment = {
   production: false,
   firebase : {
-    apiKey: "AIzaSyDNSWDYxLn_BJ7nL32kUD_GZ2GX1brNkFw",
-    authDomain: "softwareseguro-bca08.firebaseapp.com",
-    databaseURL: "https://softwareseguro-bca08.firebaseio.com",
-    projectId: "softwareseguro-bca08",
-    storageBucket: "softwareseguro-bca08.appspot.com",
-    messagingSenderId: "213776706013",
-    appId: "1:213776706013:web:9fb4576074abfe61276e34",
-    measurementId: "G-GMXC9RLJ3Q"
+    apiKey: "",
+    authDomain: "",
+    databaseURL: "",
+    projectId: "",
+    storageBucket: "",
+    messagingSenderId: "",
+    appId: "",
+    measurementId: ""
   }
 };
 
