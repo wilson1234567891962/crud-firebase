@@ -1,0 +1,13 @@
+<div class="dialog-overlay">
+    <section class="popup open-popup">
+        <div class="container-header">
+            <h4>{{title}}</h4>
+            <img src="../assets/images/close.svg" *ngIf="closable" class="container-image" (click)="closeWarning()"/>
+        </div>
+        <div class="container-line"></div>
+        <div class="container-subtitle">
+           <span>{{subTitle}}</span>
+        </div>
+        <div class="container-line"></div>
+    </section>
+</div>

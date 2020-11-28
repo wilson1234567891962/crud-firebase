@@ -1,0 +1,22 @@
+<link href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+<script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.0/js/bootstrap.min.js"></script>
+<script src="//code.jquery.com/jquery-1.11.1.min.js"></script>
+
+<div class="container">
+    <div class="card card-container">
+        <img id="profile-img" class="profile-img-card" src="//ssl.gstatic.com/accounts/ui/avatar_2x.png" />
+        <p id="profile-name" class="profile-name-card"></p>
+        <div class="form-signin">
+            <span id="reauth-email" class="reauth-email"></span>
+            <input type="email" id="inputEmail" class="form-control" placeholder="Correo electronico"   #user (keyup)="onKey(user.value, 0)">
+            <input type="password" id="inputPassword" class="form-control" placeholder="Clave" required #password (keyup)="onKey(password.value, 1)"/>
+            <button class="btn btn-lg btn-primary btn-block btn-signin" type="button" (click)="login()"  [disabled]="checkDisabled()">Ingresar</button>
+        </div>
+    </div>
+</div>
+<app-loading [show]="show"></app-loading>
+<app-alert [title]="alert.controls['title'].value" [closable]="alert.controls['close'].value"
+           *ngIf="alert.controls['showPopUp'].value" [subTitle]="alert.controls['subTitle'].value"
+           (closePopUp)="closePopUp($event)">
+
+</app-alert>
